@@ -10,7 +10,7 @@ console.log (arr[i]);
 
 //2.returns a clone of the array given
 function cloneArray (arr) {
-  let clone = arr.slice();
+  let clone = arr.slice(0, 1, 2);
   return arr.slice;
 };
 console.log(arr.slice)
@@ -48,9 +48,9 @@ function toStringWithSeparator() {
 //8.returns the sum of squares of the elements of a numeric vector.
 function sumSquaresOfVector() {
   let sum = 0,
-      i = array.length;
+      i = arr.length;
   while (i--) {
-    sum += Math.pow(array[i], 2);
+    sum += Math.pow(arr[i], 2);
   }return sum;
 }
 console.log(sumSquaresOfVector());
@@ -69,15 +69,15 @@ return total / arr.length;
 
 //10.returns the elements of the array given as an HTML unordered list (string)
 function toUl(arr) {
-  let text = "<ul>";
+    let text = "<ul>";
     for (let i = 0; i < arr.length; i++) {
   text += "<li>" + arr[i] + "</li>"
 }
 text += "</ul>";
 return text;
 }
-console.log(toUl());
-}
+console.log(toUl(arr));
+
 
 //11.returns the elements of the array given as an HTML unordered list (string)
 function toUlDeep() {
