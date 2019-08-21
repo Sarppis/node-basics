@@ -30,15 +30,6 @@ function lastElement (arr) {
   console.log(lastElement(last));
 }
 
-//5.returns the n first elements of the array. If n is negative, zero or undefined, it returns an empty array
-function nFirstElements() {
-
-}
-
-//6. returns the n first elements of the array given. If n is beyond array limits, zero or undefined, it returns an empty array
-function nLastElements() {
-
-}
 
 //7.returns the elements of the array given in a string separated with the separator given as argument
 function toStringWithSeparator() {
@@ -78,8 +69,3 @@ return text;
 }
 console.log(toUl(arr));
 
-
-//11.returns the elements of the array given as an HTML unordered list (string)
-function toUlDeep() {
-  
-}
